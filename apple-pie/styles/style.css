@@ -28,7 +28,7 @@ body {
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 650px;
+  height: 500px;
   display: flex;
   justify-content: center;  
 }
@@ -36,14 +36,19 @@ body {
 h1 {
   color: white;
   align-self: center;
+  font-size: 4em;
+}
+
+h2 {
+  padding: 20px 0;
 }
 
 .intro-section {
-  padding: 40px 0;
+  padding-top: 3em;
 }
 
 .body {
-  margin: 0 40px;
+  margin: 0 5em 5em 5em;
 }
 
 img {
@@ -52,4 +57,30 @@ img {
   margin: 0 auto;
 }
 
+.img-box {
+  margin-bottom: 1.5em;
+}
 
+.ingredients-list {
+  list-style-type: "-";
+}
+
+.content {
+  margin-bottom: 3em;
+}
+
+ol { 
+  list-style: none;
+}
+
+ol > li {  
+  counter-increment: listcounter;
+}
+
+ol > li::before {
+  content: counter(listcounter) ") ";
+}
+
+.list {
+  margin-left: 1em;
+}
