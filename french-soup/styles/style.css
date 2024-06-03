@@ -22,7 +22,7 @@ html {
 
 .header {
   background-image: url("/french-soup/images/soup.jpg");
-  background-position: 0 0;
+  background-position: 0 87%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -33,13 +33,18 @@ html {
 
 h1 {
   color: white;
-  font-size: 3em;
+  font-size: 5em;
   align-self: center;
   font-weight: 100;
 }
 
 .body {
-  margin: 0 4em 4em 4em;
+  margin: 0 11vw 4em;
+  line-height: 1.5em;
+}
+
+.intro-section {
+  font-size: 1.5em;
 }
 
 img {
@@ -79,5 +84,14 @@ ol > li::before {
 @media (max-width: 768px) {
   img {
     width: 95%;
+  }
+
+  .body {
+    margin: 0 4vw 4em;
+    padding: 0 2em;
+  }
+
+  .intro-section {
+    font-size: 1em;
   }
 }
