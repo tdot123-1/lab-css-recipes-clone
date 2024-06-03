@@ -84,3 +84,9 @@ ol > li::before {
 .list {
   margin-left: 1em;
 }
+
+@media (max-width: 768px) {
+  img {
+    width: 95%;
+  }
+}
